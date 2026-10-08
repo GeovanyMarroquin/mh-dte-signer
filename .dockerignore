@@ -1,0 +1,7 @@
+uploads/*
+!uploads/certs/
+uploads/certs/*
+!uploads/certs/.gitkeep
+.git
+.gradle
+build

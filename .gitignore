@@ -1,0 +1,12 @@
+uploads/*
+uploads/*.crt
+uploads/certs/*
+!uploads/certs/
+!uploads/certs/.gitkeep
+__debug_*
+.gradle/
+build/
+out/
+*.class
+.DS_Store
+.env

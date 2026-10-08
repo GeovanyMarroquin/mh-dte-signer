@@ -1,0 +1,13 @@
+services:
+  dte-signer:
+    container_name: dte-signer-container
+    build: .
+    ports:
+      - "${SERVER_PORT:-8113}:8113"
+    env_file:
+      - path: .env
+        required: true
+    environment:
+      SERVER_PORT: 8113
+      CERTIFICATE_DIRECTORY: /app/uploads/certs/
+    init: true
